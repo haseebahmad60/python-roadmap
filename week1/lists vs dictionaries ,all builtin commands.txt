@@ -1,0 +1,99 @@
+
+---
+
+## List methods
+
+```python
+students.append()
+
+students.remove()
+
+students.pop()
+
+students.clear()
+
+students.copy()
+```
+
+Again, notice the dot.
+
+---
+
+## Dictionary methods
+
+```python
+student.get()
+
+student.keys()
+
+student.values()
+
+student.items()
+
+student.update()
+```
+
+Again, they belong to the dictionary.
+
+---
+
+# How to tell the difference?
+
+Ask yourself:
+
+### Can I call it directly?
+
+```python
+len(students)
+```
+
+✅ That's a **built-in function**.
+
+---
+
+Do I need a dot (`.`)?
+
+```python
+students.append(student)
+```
+
+✅ That's a **method**.
+
+---
+
+Here's another comparison:
+
+```python
+print(name)          # Built-in function
+
+len(name)            # Built-in function
+
+name.lower()         # String method
+
+students.append(x)   # List method
+
+student.get("age")   # Dictionary method
+```
+
+---
+
+# A simple way to remember
+
+* **Functions** are like tools in your toolbox. You can use them anytime:
+
+  ```python
+  print()
+  len()
+  int()
+  input()
+  ```
+
+* **Methods** are abilities that belong to a specific object:
+
+  ```python
+  name.lower()       # Strings know how to become lowercase.
+  students.append()  # Lists know how to add items.
+  student.get()      # Dictionaries know how to retrieve values by key.
+  ```
+
+As you continue learning Python, you'll discover more built-in functions like `max()`, `min()`, `sum()`, `sorted()`, `enumerate()`, and `zip()`, but the ones above are the core functions you've used so far in your roadmap.
